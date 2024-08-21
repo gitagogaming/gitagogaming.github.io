@@ -12,7 +12,7 @@
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
   <script src="script/script.js"></script>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -119,37 +119,48 @@
         <div class="container">
             <h1 class="text-center"></h1>
             <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="servicesText">
+            <div class="col-lg-4 mt-4 d-flex align-items-stretch">
+                <div class="servicesText card w-100 border-0">
                         <div class="card-body">
                             <i class="fas servicesIcon fa-clock"></i>
                             <h4 class="card-title mb-3">Esports Production</h4>
-                            <p class="card-text mb-3 centered-text">Involved in Esports production for over 4 years <br>I bring expertise in using vMix & OBS Studio alongside various production tools that I have crafted. I offer dedicated event production services tailored to meet your needs effectively.
-                            </p>
+                            <ul class="list-group">
+                                <li class="list-group-item">5 years experience in Esports Production</li>
+                                <li class="list-group-item">Proficient in utilizing vMix, OBS Studio, and a range of custom production tools</li>
+                                <li class="list-group-item">Production services tailored to meet your needs.</li>
+                            </ul>
                         </div>
                     </div>  
                 </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="servicesText">
+                <div class="col-lg-4 mt-4 d-flex align-items-stretch">
+                    <div class="servicesText card w-100 border-0">
                         <div class="card-body">
                             <i class='fas servicesIcon fa-layer-group'></i>
                             <h4 class="card-title mb-3">Developing</h4>
-                            <p class="card-text mb-3 centered-text">Passionate about Python, JavaScript, HTML, CSS, and SQL. Skilled in website, web application, and desktop application development. Actively involved as a community developer for TouchPortal, having created 24+ plugins for the community.
-                            </p>
+                            <ul class="list-group">
+                                <li class="list-group-item">Python, JS, NodeJS, ReactJS, HTML, CSS, SQL.</li>
+                                <li class="list-group-item">Developed over 24 plugins for <a href="https://www.touchportal.com">TouchPortal</a>.</li>
+                                <li class="list-group-item">Developing websites, web applications, and desktop applications.</li>
+                            </ul>
                         </div>
                     </div>  
                 </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="servicesText">
+          
+ 
+                <div class="col-lg-4 mt-4 d-flex align-items-stretch">
+                    <div class="servicesText card w-100 border-0">
                         <div class="card-body">
                             <i class='fas servicesIcon fa-wrench'></i>
                             <h4 class="card-title mb-3">IT / Technical Support</h4>
-                            <p class="card-text mb-3 centered-text">Experienced Technical Support professional with over 10 years of experience. Holds a Computer Specialist Certificate from Pennsylvania Highlands Community College. Proficient in Windows and Linux systems. Skilled in Microsoft Excel, Word, and Powerpoint.
-                            </p>
+                            <ul class="list-group mb-3">
+                                <li class="list-group-item">Technical Support professional with 10+ years of experience</li>
+                                <li class="list-group-item">Excellent problem-solving and analytical skills</li>
+                                <li class="list-group-item">Certified Computer Specialist from Pennsylvania Highlands Community College</li>
+                            </ul>
                         </div>
                     </div>  
                 </div>
+            </div>
             </div>      
     </section>
   <!-- Your website content goes here -->
@@ -165,31 +176,7 @@
 
     <section id="counters">
     <!-- counter section -->
-<!-- 
-    <div class="counter-section">
-        <div class="counter-item">
-          <i class="fas fa-chart-bar icon"></i>
-          <div class="icon-text">Total Events</div>
-          <div class="counter-text" id="total-events">168</div>
-        </div>
-        <div class="counter-item">
-          <i class="fas fa-solid fa-computer icon"></i>
-          <div class="icon-text">Hours Produced</div>
-          <div class="counter-text" id="total-hours">850</div>
-        </div>
-        <div class="counter-item">
-          <i class="fa-solid fa-user-tie icon"></i>
-          <div class="icon-text">Organizers</div>
-          <div class="counter-text" id="total-organizers">15</div>
-        </div>
-        <div class ="counter-item">
-            <i class="fa-solid fa-code icon"></i>
-            <div class="icon-text">Projects</div>
-            <div class="counter-text" id="total-projects">26</div>
-        </div>
-      </div>
-    </section>
--->
+
 
     <!-- portfolio section-->
     <section id="portfolio">
@@ -205,55 +192,17 @@
 
         </div>
           <div class="row portfolio-row" id="portfolioRow"></div>
-     <!---->   <div class="paginationContainer-bottom" id="paginationContainer-bottom">
+         <div class="paginationContainer-bottom" id="paginationContainer-bottom">
           
         </div> 
       </section>
 
-    <!-- contact section-->
-    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
 
-    <!-- 
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
-                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
-                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=pennsylvania&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-                            </iframe>
-                        </div>
-                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
-                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
-                        </style>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-            
-                    <form>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                        </div>
-                    </form>
-                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
-                    
-                </div>
-
-            </div>
-        </div>
-    </section>
--->
     
     <div id="backToTopButton" class="back-to-top-button">
         <i class="fas fa-arrow-up"></i>
     </div>
-    <!-- footer section-->
+
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
