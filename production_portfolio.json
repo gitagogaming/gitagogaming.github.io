@@ -1,0 +1,55 @@
+[
+    {
+      "Organizer": "The Esport Company",
+      "Title": "SFU HS Championships - 2021",
+      "Description": "Produced & Observed for the first Saint Francis University HighSchool Championship with TEC",
+      "Image": "gallery/events/the-esport-company/EsportCompany_SFUChamps_Year1.jpg"
+    },
+    {
+      "Organizer": "Philly Esports",
+      "Title": "SSBU Singles Tournament",
+      "Description": "LAN Hosted at Montgomery County Community College",
+      "Image": "gallery/events/philly-esports/Philly-Esports-SmashLan.jpg",
+      "OtherImages": [
+        "Default1.jpg",
+        "Default2.jpg"
+            ]
+    },
+    {
+      "Organizer": "Tactical Banditry",
+      "Title": "Strategic Gaming",
+      "Description": "Focused on competitive and tactical gameplay.",
+      "Image": ""
+    },
+    {
+      "Organizer": "SFU Esports",
+      "Title": "University Gaming",
+      "Description": "Promoting esports and gaming at SFU.",
+      "Image": ""
+    },
+    {
+      "Organizer": "ELO HELL Esports",
+      "Title": "Climbing the Ranks",
+      "Description": "Join us as we strive for the top ranks.",
+      "Image": ""
+    },
+    {
+      "Organizer": "ClutchGG",
+      "Title": "Skill and Precision",
+      "Description": "Where clutch plays make all the difference.",
+      "Image": ""
+    },
+    {
+      "Organizer": "Seasonal Shootout",
+      "Title": "Seasonal Fun",
+      "Description": "Gaming events for every season.",
+      "Image": ""
+    },
+    {
+      "Organizer": "Metro Esports",
+      "Title": "Gaming in the City",
+      "Description": "Bringing esports excitement to the city.",
+      "Image": ""
+    }
+  ]
+  

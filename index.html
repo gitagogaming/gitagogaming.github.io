@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Gitago</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <script src="script/script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- hiding navbar, do we really need it? -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+          <a class="navbar-brand" href="#">Dave "Gitago" Bell</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title"></h2>
+                <p class="hero_desc"></p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container counter-trigger mt-4 pt-4">
+            <div class="row mt-4">
+                
+                <div class="col-lg-4">
+                    <img src="images/about.jpg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="h6 col-lg-8 about-me about-header">
+                    <p> My name is David, also known as Gitago
+                    </p>
+                    <div class="row mt-3 about-text">
+                        <p>Fueled by a deep passion and unwavering dedication to succeed. <br><br>I maintain a relentless pursuit of excellence, constantly evolving my skillset with the aim of being the very best in my field.
+                        </p> <!-- <br><br> Drawing from my extensive knowledge, I strive to deliver a superior viewing experience that captivates your audience and impresses your investors.-->
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="counters">
+        <!-- counter section -->
+        <div class="counter-section">
+            <div class="counter-item">
+                <a href="https://docs.google.com/spreadsheets/d/1FprE5YzOXuu6fT0DB61F4vg5a9khF5FmY9vmSrZ4Bwk/edit#gid=866587148" target="_blank">
+              <i class="fas fa-chart-bar icon"></i>
+              <div class="icon-text">Total Events</div>
+              <!-- make this a link -->
+              <div class="counter-text" id="total-events">168</div>
+            </a>
+            </div>
+            <div class="counter-item">
+                <a href="https://www.bit.ly/Gitago" target="_blank">
+              <i class="fas fa-solid fa-computer icon"></i>
+              <div class="icon-text">Hours Produced</div>
+              <div class="counter-text" id="total-hours">850</div>
+            </a>
+            </div>
+            <div class="counter-item">
+                <a href="https://www.bit.ly/Gitago" target="_blank">
+              <i class="fa-solid fa-user-tie icon"></i>
+              <div class="icon-text">Organizers</div>
+              <div class="counter-text" id="total-organizers">11</div>
+            </a>
+            </div>
+            <div class ="counter-item">
+                <a href="https://github.com/gitagogaming?tab=repositories&q=&type=public&language=&sort=stargazers" target="_blank">
+                <i class="fa-solid fa-code icon"></i>
+                <div class="icon-text">Projects</div>
+                <div class="counter-text" id="total-projects">26</div>
+                </a>
+            </div>
+          </div>
+        </section>
+
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center"></h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mb-3">Esports Production</h4>
+                            <p class="card-text mb-3 centered-text">Involved in Esports production for over 4 years <br>I bring expertise in using vMix & OBS Studio alongside various production tools that I have crafted. I offer dedicated event production services tailored to meet your needs effectively.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mb-3">Developing</h4>
+                            <p class="card-text mb-3 centered-text">Passionate about Python, JavaScript, HTML, CSS, and SQL. Skilled in website, web application, and desktop application development. Actively involved as a community developer for TouchPortal, having created 24+ plugins for the community.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mb-3">IT / Technical Support</h4>
+                            <p class="card-text mb-3 centered-text">Experienced Technical Support professional with over 10 years of experience. Holds a Computer Specialist Certificate from Pennsylvania Highlands Community College. Proficient in Windows and Linux systems. Skilled in Microsoft Excel, Word, and Powerpoint.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>      
+    </section>
+  <!-- Your website content goes here -->
+  <div class="social-icons-container">
+    <div class="social-icons">
+      <a href="https://www.twitter.com/gitago_" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/david-bell-68277256/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@gitago" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.github.com/gitagogaming" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="http://www.discord.com/users/367416539642593281" target="_blank"><i class="fab fa-discord"></i></a>
+    </div>
+  </div>
+
+    <section id="counters">
+    <!-- counter section -->
+<!-- 
+    <div class="counter-section">
+        <div class="counter-item">
+          <i class="fas fa-chart-bar icon"></i>
+          <div class="icon-text">Total Events</div>
+          <div class="counter-text" id="total-events">168</div>
+        </div>
+        <div class="counter-item">
+          <i class="fas fa-solid fa-computer icon"></i>
+          <div class="icon-text">Hours Produced</div>
+          <div class="counter-text" id="total-hours">850</div>
+        </div>
+        <div class="counter-item">
+          <i class="fa-solid fa-user-tie icon"></i>
+          <div class="icon-text">Organizers</div>
+          <div class="counter-text" id="total-organizers">15</div>
+        </div>
+        <div class ="counter-item">
+            <i class="fa-solid fa-code icon"></i>
+            <div class="icon-text">Projects</div>
+            <div class="counter-text" id="total-projects">26</div>
+        </div>
+      </div>
+    </section>
+-->
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+          <h1 class="text-center"></h1>
+              <!-- Portfolio Buttons -->
+        <div class="portfolio-buttons-container">
+        <button class="portfolio-button" id="production-button">Production</button>
+        <button class="portfolio-button" id="plugins-button">Projects</button>
+        <button class="portfolio-button" id="graphic-design-button">Graphic Design</button>
+    </div>
+        <div class="paginationContainer" id="paginationContainer-top">
+
+        </div>
+          <div class="row portfolio-row" id="portfolioRow"></div>
+     <!---->   <div class="paginationContainer-bottom" id="paginationContainer-bottom">
+          
+        </div> 
+      </section>
+
+    <!-- contact section-->
+    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+
+    <!-- 
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;">
+                        <div id="embedmap-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=pennsylvania&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+                            </iframe>
+                        </div>
+                        <a class="googlemaps-html" href="https://www.embed-map.com" id="get-data-forembedmap">https://www.embed-map.com</a>
+                        <style>#embedmap-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}
+                        </style>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+            
+                    <form>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-success mt-3">Contact Me</button>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+-->
+    
+    <div id="backToTopButton" class="back-to-top-button">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons-footer mt-2">
+                <a href="https://www.twitter.com/gitago_" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/david-bell-68277256/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@gitago" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.github.com/gitagogaming" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="http://www.discord.com/users/367416539642593281" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+            <p class = "created-by"> Created by Gitago</p>
+        </div>
+    </footer>
+
+
+    
+    <script>
+    // add class navbarDark on navbar scroll
+    const header = document.querySelector('.navbar');
+        console.log(header)
+
+        // Stopping top bar from disappearing..
+      //  window.onscroll = function() {
+      //      const top = window.scrollY;
+      //      if(top >=100) {
+      //          header.classList.add('navbarDark');
+      //      }
+      //      else {
+      //          header.classList.remove('navbarDark');
+      //      }
+      //  }
+        // collapse navbar after click on small devices
+        const navLinks = document.querySelectorAll('.nav-item')
+        const menuToggle = document.getElementById('navbarSupportedContent')
+        
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
+        })
+        
+
+
+
+// Call the function to fetch and display portfolio projects
+// Get all the buttons
+const buttons = document.querySelectorAll(".portfolio-button");
+
+// Set the default selected button
+fetchPortfolioProjects();
+buttons[1].classList.add("selected");
+
+// Add event listeners for button click
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        // Remove "selected" class from all buttons
+        buttons.forEach(btn => btn.classList.remove("selected"));
+
+        // Add "selected" class to the clicked button
+        button.classList.add("selected");
+
+        // Perform the desired action based on the selected button
+        switch (button.id) {
+            case "production-button":
+                // Code to handle Production button click
+                fetchDevelopmentProjects();
+                break;
+            case "plugins-button":
+                fetchPortfolioProjects();
+                // Code to handle TouchPortal Plugins button click
+                break;
+            case "developing-button":
+                // Code to handle Developing button click
+                break;
+            case "graphic-design-button":
+                // Code to handle Graphic Design button click
+                break;
+            case "technical-support-button":
+                // Code to handle Technical Support button click
+                break;
+            default:
+                break;
+        }
+    });
+});
+
+// BACK TO THE TOP BUTTON
+// Get the button element
+const backToTopButton = document.getElementById("backToTopButton");
+
+// Function to show/hide the "Back to Top" button based on scroll position
+function toggleBackToTopButton() {
+    const scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
+    if (scrollPercentage > 75) {
+    backToTopButton.style.display = "block";
+    backToTopButton.style.marginBottom = "50px";
+    } else {
+    backToTopButton.style.display = "none";
+    }
+}
+// Event listener for the window's scroll event
+window.addEventListener("scroll", toggleBackToTopButton);
+// Function to scroll back to the top of the page when the button is clicked
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+// Event listener for the "Back to Top" button click
+backToTopButton.addEventListener("click", scrollToTop);
+
+
+var typed = new Typed('.hero_title', {
+    strings: ["Hello there, I'm Gitago\n "],
+    typeSpeed: 40,
+    backSpeed: 10,
+    startDelay: 600,
+    backDelay: 1000,
+    showCursor: false, // Hide the cursor
+});
+
+var typed = new Typed('.hero_desc', {
+    strings: ["Developer, Esports Production &amp; Technical Support"],
+    typeSpeed: 40,
+    backSpeed: 10,
+    startDelay: 2200,
+    backDelay: 1000,
+    showCursor: false, // Hide the cursor
+});
+
+
+
+</script>
+
+
+</body>
+
+</html>

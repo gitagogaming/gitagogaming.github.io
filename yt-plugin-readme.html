@@ -1,0 +1,302 @@
+<h1 id="youtube-live-plugin-created-for-touchportal">YouTube Live Plugin - Created for TouchPortal</h1>
+<p><img src="https://user-images.githubusercontent.com/76603653/185826537-0eff3ffd-d6ee-485d-bee4-e4724b4ed07f.jpg" alt="progreesss (1)"></p>
+<ul>
+<li><a href="#Youtube-Plugin">Youtube Plugin</a><ul>
+<li><a href="#description">Description</a> </li>
+<li><a href="#install_instructions">Install Instructions</a></li>
+<li><a href="#Settings-Overview">Settings Overview</a></li>
+<li><a href="#Features">Actions / States / Events</a><ul>
+<li><a href="#actions">Actions</a><ul>
+<li><a href="#tp.plugin.youtube.mainactions">YouTube</a></li>
+</ul>
+</li>
+<li><a href="#states">States</a><ul>
+<li><a href="#tp.plugin.youtube.mainstates">YouTube</a></li>
+<li><a href="#tp.plugin.youtube.channel_infostates">Channel Details</a></li>
+<li><a href="#tp.plugin.youtube.live_statsstates">Live Stream Details</a></li>
+<li><a href="#tp.plugin.youtube.chatter0states">Chatter 0-5 States</a></li>
+</ul>
+</li>
+<li><a href="#events">Events</a><ul>
+<li><a href="#tp.plugin.youtube.superStickerstates">SuperSticker Event</a></li>
+<li><a href="#tp.plugin.youtube.superChatstates">SuperChat Event</a></li>
+<li><a href="#tp.plugin.youtube.newSponsorstates">New Sponsor Event</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#terms-of-service">Terms of Service</a></li>
+<li><a href="#bugs-and-suggestion">Bugs and Support</a></li>
+<li><a href="#project-sponsors">Project Sponsors</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="description">Description</h1>
+<p>Control your YouTube Live stream using TouchPortal on your mobile device</p>
+<h1 id="install-instructions">Install Instructions</h1>
+<p>1) <strong>Download Plugin</strong> -&gt; <a href="https://github.com/gitagogaming/Youtube-TouchPortal-Plugin/releases">Releases</a>
+2) <strong>Install Plugin</strong> -&gt; <a href="https://www.touch-portal.com/blog/post/tutorials/import-plugin-guide.php#:~:text=Importing%20a%20plugin%20file&amp;text=A%20Touch%20Portal%20plug-in%20file%20has%20the%20.,icon%20in%20the%20system%20tray.">How-To</a>
+3) <strong>Accept Authorizations</strong> -&gt; <a href="#Accept-Authorization">How-To</a><br></p>
+<h2 id="settings-overview">Settings Overview</h2>
+<table>
+<thead>
+<tr>
+<th>Read-only</th>
+<th>Type</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>False</td>
+<td>text</td>
+<td>Basic</td>
+</tr>
+</tbody>
+</table>
+<h1 id="features">Features</h1>
+<h2 id="actions">Actions</h2>
+<details open id='tp.plugin.youtube.mainactions'><summary><b>Category:</b> YouTube <small><ins>(Click to expand)</ins></small></summary><table>
+<tr valign='buttom'><th>Action Name</th><th>Description</th><th>Format</th><th nowrap>Data<br/><div align=left><sub>choices/default (in bold)</th><th>On<br/>Hold</sub></div></th></tr>
+<tr valign='top'><td>YT | Chat: Send Message</td><td> </td><td>Send Message: [1]</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Chat: Delete Message</td><td> </td><td>Delete MessageID: [1]</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Chat: TimeOut Chatter</td><td> </td><td>Timeout: [1] for [2] seconds</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+<li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Connect: Select a Live Chat</td><td> </td><td>This action will cause a popup to appear. please select the stream you wish to connect to</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Connect: Turn the Auto Connect on or off</td><td> </td><td>Auto Connect [1]</td><td><ol start=1><li>Type: choice &nbsp; 
+Default: <b></b> Possible choices: [&#39;On&#39;, &#39;Off&#39;]</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: Video Category</td><td> </td><td>Change Category to [1]</td><td><ol start=1><li>Type: choice &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: Video Title</td><td> </td><td>Change Title to [1]</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: Video Description</td><td> </td><td>Change Description to [1]</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: Video Language</td><td> </td><td>Change Language to to [1]</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: Video Tags</td><td> </td><td>Change Stream Tags to [1]</td><td><ol start=1><li>Type: text &nbsp; 
+&lt;empty&gt;</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: Public Stats Viewable</td><td> </td><td>Change Public Stats Viewable to [1]</td><td><ol start=1><li>Type: choice &nbsp; 
+Default: <b></b> Possible choices: [&#39;True&#39;, &#39;False&#39;]</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: Video License</td><td> </td><td>Change video_license to [1]</td><td><ol start=1><li>Type: choice &nbsp; 
+Default: <b></b> Possible choices: [&#39;Creative Common&#39;, &#39;YouTube&#39;]</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Video Privacy</td><td> </td><td>Change Video Privacy to [1]</td><td><ol start=1><li>Type: choice &nbsp; 
+Default: <b></b> Possible choices: [&#39;Public&#39;, &#39;Unlisted&#39;, &#39;Private&#39;]</li>
+</ol></td>
+<td align=center>No</td>
+<tr valign='top'><td>YT | Update: isMadeforKids</td><td> </td><td>Change Video Is Made for Kids status to [1]</td><td><ol start=1><li>Type: choice &nbsp; 
+Default: <b></b> Possible choices: [&#39;True&#39;, &#39;False&#39;]</li>
+</ol></td>
+<td align=center>No</td>
+</tr></table></details>
+<br>
+
+## States
+<details id='tp.plugin.youtube.mainstates'><summary><b>Category:</b> YouTube <small><ins>(Click to expand)</ins></small></summary>
+
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.plugin_status | YT Plugin Status |  |   |
+| .state.plugin_status.retry.timer | YT Plugin Status Retry Timer |  |   |
+| .state.plugin_status.retry.attempts | YT Plugin Status Retry Attempts |  |   |
+</details>
+
+<details id='tp.plugin.youtube.channel_infostates'><summary><b>Category:</b> YT Channel Info <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.channel.total_subscribers | YT | Total Channel  Subscribers |  |   |
+| .state.channel.total_videos | YT | Total Channel Videos |  |   |
+| .state.channel.total_channel_views | YT | Total Channel Views |  |   |
+</details>
+
+<details id='tp.plugin.youtube.live_statsstates'><summary><b>Category:</b> YT Live Stream Info <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.channel.current_live_title | YT | Live Title |  |   |
+| .state.channel.current_live_description | YT | Live Description |  |   |
+| .state.channel.current_live.concurrentViewers | YT | Live Concurrent Viewers |  |   |
+| .state.channel.current_live.viewCount | YT | Live Total View Count |  |   |
+| .state.channel.current_live.likeCount | YT | Live Like Count |  |   |
+| .state.channel.current_live.disLikeCount | YT | Live Dislike Count |  |   |
+| .state.channel.current_live.favoriteCount | YT | Live Favorite Count |  |   |
+| .state.channel.current_live.commentCount | YT | Live Comment Count |  |   |
+| .state.channel.current_live.startTime | YT | Live Start Time |  |   |
+</details>
+
+<details id='tp.plugin.youtube.chatter0states'><summary><b>Category:</b> Chatter 0 <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.Chatter_0.name | YouTube: Chatter 0 - Name |  |   |
+| .state.Chatter_0.message | YouTube: Chatter 0 - Message |  |   |
+| .state.Chatter_0.message.id | YouTube: Chatter 0 - Message ID |  |   |
+| .state.Chatter_0.profile_image | YouTube: Chatter 0 - Profile Image URL |  |   |
+</details>
+
+<details id='tp.plugin.youtube.chatter1states'><summary><b>Category:</b> Chatter 1 <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.Chatter_1.name | YouTube: Chatter 1 - Name |  |   |
+| .state.Chatter_1.message | YouTube: Chatter 1 - Message |  |   |
+| .state.Chatter_1.message.id | YouTube: Chatter 1 - Message ID |  |   |
+| .state.Chatter_1.profile_image | YouTube: Chatter 1 - Profile Image URL |  |   |
+</details>
+
+<details id='tp.plugin.youtube.chatter2states'><summary><b>Category:</b> Chatter 2 <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.Chatter_2.name | YouTube: Chatter 2 - Name |  |   |
+| .state.Chatter_2.message | YouTube: Chatter 2 - Message |  |   |
+| .state.Chatter_2.message.id | YouTube: Chatter 2 - Message ID |  |   |
+| .state.Chatter_2.profile_image | YouTube: Chatter 2 - Profile Image URL |  |   |
+</details>
+
+<details id='tp.plugin.youtube.chatter3states'><summary><b>Category:</b> Chatter 3 <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.Chatter_3.name | YouTube: Chatter 3 - Name |  |   |
+| .state.Chatter_3.message | YouTube: Chatter 3 - Message |  |   |
+| .state.Chatter_3.message.id | YouTube: Chatter 3 - Message ID |  |   |
+| .state.Chatter_3.profile_image | YouTube: Chatter 3 - Profile Image URL |  |   |
+</details>
+
+<details id='tp.plugin.youtube.chatter4states'><summary><b>Category:</b> Chatter 4 <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.Chatter_4.name | YouTube: Chatter 4 - Name |  |   |
+| .state.Chatter_4.message | YouTube: Chatter 4 - Message |  |   |
+| .state.Chatter_4.message.id | YouTube: Chatter 4 - Message ID |  |   |
+| .state.Chatter_4.profile_image | YouTube: Chatter 4 - Profile Image URL |  |   |
+</details>
+
+<details id='tp.plugin.youtube.chatter5states'><summary><b>Category:</b> Chatter 5 <small><ins>(Click to expand)</ins></small></summary>
+</details>
+
+<h2 id="events">Events</h2>
+<details id='tp.plugin.youtube.mainstates'><summary><b>Category:</b> YouTube <small><ins>(Click to expand)</ins></small></summary>
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.Chatter_5.name | YouTube: Chatter 5 - Name |  |   |
+| .state.Chatter_5.message | YouTube: Chatter 5 - Message |  |   |
+| .state.Chatter_5.message.id | YouTube: Chatter 5 - Message ID |  |   |
+| .state.Chatter_5.profile_image | YouTube: Chatter 5 - Profile Image URL |  |   |
+</details>
+
+<details id='tp.plugin.youtube.superStickerstates'><summary><b>Category:</b> SuperSticker Event <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.superSticker.name | YouTube: SuperSticker - Name |  |   |
+| state.superSticker.channel_id | YouTube: SuperSticker - Channel ID |  |   |
+| .state.superSticker.message | YouTube: SuperSticker - Message |  |   |
+| .state.superSticker.profile_image | YouTube: SuperSticker - Profile Image URL |  |   |
+| .state.superSticker.amount | YouTube: SuperSticker - Amount |  |   |
+</details>
+
+<details id='tp.plugin.youtube.superChatstates'><summary><b>Category:</b> SuperChat Event <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.superChat.name | YouTube: SuperChat - Name |  |   |
+| state.superChat.channel_id | YouTube: SuperChat - Channel ID |  |   |
+| .state.superChat.message | YouTube: SuperChat - Message |  |   |
+| .state.superChat.profile_image | YouTube: SuperChat - Profile Image URL |  |   |
+| .state.superChat.amount | YouTube: SuperChat - Amount |  |   |
+</details>
+
+<details id='tp.plugin.youtube.newSponsorstates'><summary><b>Category:</b> New Sponsor Event <small><ins>(Click to expand)</ins></small></summary>
+
+
+| Id | Description | DefaultValue | parentGroup |
+| --- | --- | --- | --- |
+| .state.NewSponsor.name | YouTube: New Sponsor - Name |  |   |
+| state.NewSponsor.channel_id | YouTube: New Sponsor - Channel ID |  |   |
+| .state.NewSponsor.message | YouTube: New Sponsor - Message |  |   |
+| .state.NewSponsor.profile_image | YouTube: New Sponsor - Profile Image URL |  |   |
+| .state.NewSponsor.amount | YouTube: New Sponsor - Amount |  |   |
+</details>
+
+
+<h1 id="faq">FAQ</h1>
+<p>Q) How do I connect?<br>
+A) You have two ways to connect to your live streams. <br>
+  1) Use an Action which displayes a pop up window with all your live streams that may be available.<br>
+  <img src="https://user-images.githubusercontent.com/76603653/189020404-2c8bf9fd-f1e5-4bc1-8b6f-8db1af48f0ea.png" alt="image"><br>
+  2) Turn On Auto Connect and it will connect to the any live stream you have available.<br></p>
+<h1 id="accept-authorization">Accept Authorization</h1>
+<p> <img src="https://user-images.githubusercontent.com/76603653/186208322-cd40c5b6-77f4-46c8-b0a8-b036a914fa16.jpg" alt="witharrowsOKGMGMG (1)"><br><br></p>
+<h1 id="terms-of-service">Terms of Service</h1>
+<p>By using the YouTube Live integration created by Gitago, you are agreeing to be bound by the following terms and conditions (&quot;Terms of Service&quot;).</p>
+<p>If the owner makes changes to these Terms, we will post a notice within the TouchPortal Discord <a href="https://discord.com/channels/548426182698467339/1010166073229836340/1010378470649503794">channel specified</a> and on the <a href="https://github.com/gitagogaming/Youtube-TouchPortal-Plugin/">Github Project Page</a> before the changes become effective. Any new plugin features added in the future that augment or enhance the current Service shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes.</p>
+<p>Violation of any of the terms below will result in the termination of your Account. 
+You agree to use the Service at your own risk.</p>
+<ul>
+<li>You must be thirteen (13) years or older to use this Service.</li>
+<li>You are responsible for maintaining the security of your account and specifically your refresh token.  We cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.</li>
+</ul>
+<p>Users may access the integration by using TouchPortal. Any use of this integration is bound by these Terms of Service, <a href="https://www.youtube.com/t/terms">Youtube&#39;s Terms of Service</a>, plus the following specific terms:</p>
+<ul>
+<li>You expressly understand and agree that we shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses, resulting from your use of the integration.</li>
+<li>We reserve the right at any time to modify or discontinue, temporarily or permanently, your access to the integration (or any part thereof) with or without notice.</li>
+<li>Your use of the Service is at your sole risk. The service is provided on an “as is” and “as available” basis.</li>
+<li>If your quota usage significantly exceeds the average quota usage of other TouchPortal users, we reserve the right to throttle your API requests until you can reduce your quota consumption.</li>
+<li>We do not and can not warrant that (i) the service will meet your specific requirements, (ii) the service will be uninterrupted, timely, secure, or error-free, (iii) the results that may be obtained from the use of the service will be accurate or reliable, (iv) the quality of any products, services, information, or other material purchased or obtained by you through the service will meet your expectations, and (v) any errors in the Service will be corrected.</li>
+<li>You understand and agree that we shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses. The failure to exercise or enforce any right or provision of the Terms of Service shall not constitute a waiver of such right or provision.</li>
+</ul>
+<p>Questions about the Terms of Service should be sent to gitagogaming@gmail.com.</p>
+<p>Any information you provide to us during the Authorization process will be only used to generate your YouTube Live credentials.
+Your credentials are only ever stored locally on your computer in the plugin directory which is accessed by the plugin as needed. TouchPortal and this YouTube integration do not store or share your YouTube Live credentials or any other data with outside entities.
+Any other information regarding your YouTube account is only ever accesssed and stored locally on your computer. 
+Please see <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for more details</p>
+<h1 id="bugs-and-suggestion">Bugs and Suggestion</h1>
+<p>Open an issue on github or join offical <a href="https://discord.gg/MgxQb8r">TouchPortal Discord</a> for support.</p>
+<p><br> <br></p>
+<h1 id="project-sponsors">Project Sponsors</h1>
+<p>TwitchPlaysSpeedruns - <a href="https://www.youtube.com/channel/UC-fdolKYXrjwEv6NmXFC76g">YouTube</a> / <a href="https://www.twitch.tv/twitchplaysspeedruns">Twitch</a></p>
